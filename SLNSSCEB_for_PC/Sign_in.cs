@@ -32,7 +32,9 @@ namespace SLNSSCEB_for_PC
 
             if (txt_username.Text == "slnssceb" && txt_password.Text == "adminSLNSSCEB")
             {
-
+                this.Hide();
+                Home h = new Home();
+                h.Show();
             }
             else
             {
