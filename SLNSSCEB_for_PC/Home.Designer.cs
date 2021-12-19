@@ -43,6 +43,7 @@ namespace SLNSSCEB_for_PC
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -204,6 +205,7 @@ namespace SLNSSCEB_for_PC
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel2.Controls.Add(this.label1);
             this.guna2Panel2.Controls.Add(this.guna2CirclePictureBox3);
             this.guna2Panel2.Location = new System.Drawing.Point(41, 159);
@@ -276,6 +278,15 @@ namespace SLNSSCEB_for_PC
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 2;
             // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(53, 83);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(72, 15);
+            this.guna2HtmlLabel1.TabIndex = 2;
+            this.guna2HtmlLabel1.Text = "Reg.No | 3030";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,5 +326,6 @@ namespace SLNSSCEB_for_PC
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
