@@ -29,6 +29,7 @@ namespace SLNSSCEB_for_PC
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_Minfo = new Guna.UI2.WinForms.Guna2Button();
@@ -67,6 +68,7 @@ namespace SLNSSCEB_for_PC
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -195,6 +197,8 @@ namespace SLNSSCEB_for_PC
             // btn_Mhome
             // 
             this.btn_Mhome.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Mhome.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.btn_Mhome.CheckedState.ForeColor = System.Drawing.Color.White;
             this.btn_Mhome.CheckedState.Parent = this.btn_Mhome;
             this.btn_Mhome.CustomImages.Parent = this.btn_Mhome;
             this.btn_Mhome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -639,6 +643,13 @@ namespace SLNSSCEB_for_PC
             this.guna2Button6.Text = "Add-New";
             this.guna2Button6.UseTransparentBackground = true;
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.DragStartTransparencyValue = 1D;
+            this.guna2DragControl1.TargetControl = this.guna2Panel1;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -713,5 +724,6 @@ namespace SLNSSCEB_for_PC
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

@@ -1005,15 +1005,6 @@
         ffPXFfVdf1zGfJduZSFYh0tjZzLX75fysrhhGf7nCclg/w/S369WHUGf8wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Our organization was established in 1994 in the Ceylon Electricity Board 
-under the name of CEB Independent Employees Union. We are fortunate 
-to be one of the oldest and foremost trade unions established by the 
-Ceylon Electricity Board. 
-It is always our intention and intention to work for the well-being of our 
-members and the organization. We are committed to it in the past and in 
-the present and we have a responsibility to do so in the future.</value>
-  </data>
   <data name="guna2CirclePictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
@@ -1284,6 +1275,15 @@ the present and we have a responsibility to do so in the future.</value>
         +uNyy2NaE6edt5jmdHTQ1+67G1u47GCGdNaXC5LwFmiHXHY3MXc5Omi8+znz388cVv96hst3S6zOmk/p
         ffPXFfVdf1zGfJduZSFYh0tjZzLX75fysrhhGf7nCclg/w/S369WHUGf8wAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Our organization was established in 1994 in the Ceylon Electricity Board 
+under the name of CEB Independent Employees Union. We are fortunate 
+to be one of the oldest and foremost trade unions established by the 
+Ceylon Electricity Board. 
+It is always our intention and intention to work for the well-being of our 
+members and the organization. We are committed to it in the past and in 
+the present and we have a responsibility to do so in the future.</value>
   </data>
   <data name="guna2CirclePictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1782,6 +1782,12 @@ the present and we have a responsibility to do so in the future.</value>
         2L8BFup/APrRc53lgqy1AAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="guna2DragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAUAEBAAAAEAIABoBAAAVgAAABgYAAABACAAiAkAAL4EAAAgIAAAAQAgAKgQAABGDgAAMDAAAAEA
