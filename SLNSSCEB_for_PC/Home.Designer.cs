@@ -63,11 +63,11 @@ namespace SLNSSCEB_for_PC
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox6 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnal_addNewMember = new Guna.UI2.WinForms.Guna2Panel();
             this.pbx_addNewMember = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_hAddNewMember = new System.Windows.Forms.Label();
+            this.lbl_pAddNewMember = new System.Windows.Forms.Label();
+            this.btn_s1addNewMember = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -79,7 +79,7 @@ namespace SLNSSCEB_for_PC
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).BeginInit();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox6)).BeginInit();
-            this.guna2Panel6.SuspendLayout();
+            this.pnal_addNewMember.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_addNewMember)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,6 +169,7 @@ namespace SLNSSCEB_for_PC
             this.btn_Maddmember.TabIndex = 1;
             this.btn_Maddmember.Text = "Add-Member";
             this.btn_Maddmember.UseTransparentBackground = true;
+            this.btn_Maddmember.Click += new System.EventHandler(this.btn_Maddmember_Click);
             // 
             // btn_Mprofile
             // 
@@ -568,18 +569,19 @@ namespace SLNSSCEB_for_PC
             this.guna2CirclePictureBox6.TabStop = false;
             this.guna2CirclePictureBox6.UseTransparentBackground = true;
             // 
-            // guna2Panel6
+            // pnal_addNewMember
             // 
-            this.guna2Panel6.BackColor = System.Drawing.Color.White;
-            this.guna2Panel6.Controls.Add(this.guna2Button6);
-            this.guna2Panel6.Controls.Add(this.label9);
-            this.guna2Panel6.Controls.Add(this.label8);
-            this.guna2Panel6.Controls.Add(this.pbx_addNewMember);
-            this.guna2Panel6.Location = new System.Drawing.Point(781, 122);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
-            this.guna2Panel6.Size = new System.Drawing.Size(194, 259);
-            this.guna2Panel6.TabIndex = 4;
+            this.pnal_addNewMember.BackColor = System.Drawing.Color.White;
+            this.pnal_addNewMember.Controls.Add(this.btn_s1addNewMember);
+            this.pnal_addNewMember.Controls.Add(this.lbl_pAddNewMember);
+            this.pnal_addNewMember.Controls.Add(this.lbl_hAddNewMember);
+            this.pnal_addNewMember.Controls.Add(this.pbx_addNewMember);
+            this.pnal_addNewMember.Location = new System.Drawing.Point(781, 122);
+            this.pnal_addNewMember.Name = "pnal_addNewMember";
+            this.pnal_addNewMember.ShadowDecoration.Parent = this.pnal_addNewMember;
+            this.pnal_addNewMember.Size = new System.Drawing.Size(194, 259);
+            this.pnal_addNewMember.TabIndex = 4;
+            this.pnal_addNewMember.Paint += new System.Windows.Forms.PaintEventHandler(this.pnal_addNewMember_Paint);
             // 
             // pbx_addNewMember
             // 
@@ -596,52 +598,55 @@ namespace SLNSSCEB_for_PC
             this.pbx_addNewMember.UseTransparentBackground = true;
             this.pbx_addNewMember.Click += new System.EventHandler(this.pbx_addNewMember_Click);
             // 
-            // label8
+            // lbl_hAddNewMember
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(25, 134);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 20);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Add New Member";
+            this.lbl_hAddNewMember.AutoSize = true;
+            this.lbl_hAddNewMember.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hAddNewMember.Location = new System.Drawing.Point(25, 134);
+            this.lbl_hAddNewMember.Name = "lbl_hAddNewMember";
+            this.lbl_hAddNewMember.Size = new System.Drawing.Size(151, 20);
+            this.lbl_hAddNewMember.TabIndex = 1;
+            this.lbl_hAddNewMember.Text = "Add New Member";
+            this.lbl_hAddNewMember.Click += new System.EventHandler(this.lbl_hAddNewMember_Click);
             // 
-            // label9
+            // lbl_pAddNewMember
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
-            this.label9.Location = new System.Drawing.Point(21, 163);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(160, 32);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Add new member to click \r\nAdd New button ";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lbl_pAddNewMember.AutoSize = true;
+            this.lbl_pAddNewMember.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pAddNewMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.lbl_pAddNewMember.Location = new System.Drawing.Point(21, 163);
+            this.lbl_pAddNewMember.Name = "lbl_pAddNewMember";
+            this.lbl_pAddNewMember.Size = new System.Drawing.Size(160, 32);
+            this.lbl_pAddNewMember.TabIndex = 1;
+            this.lbl_pAddNewMember.Text = "Add new member to click \r\nAdd New button ";
+            this.lbl_pAddNewMember.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lbl_pAddNewMember.Click += new System.EventHandler(this.lbl_pAddNewMember_Click);
             // 
-            // guna2Button6
+            // btn_s1addNewMember
             // 
-            this.guna2Button6.Animated = true;
-            this.guna2Button6.AutoRoundedCorners = true;
-            this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button6.BorderRadius = 15;
-            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
-            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.DisabledState.Parent = this.guna2Button6;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(214)))), ((int)(((byte)(144)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Bold);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Location = new System.Drawing.Point(27, 212);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(145, 32);
-            this.guna2Button6.TabIndex = 2;
-            this.guna2Button6.Text = "Add-New";
-            this.guna2Button6.UseTransparentBackground = true;
+            this.btn_s1addNewMember.Animated = true;
+            this.btn_s1addNewMember.AutoRoundedCorners = true;
+            this.btn_s1addNewMember.BackColor = System.Drawing.Color.Transparent;
+            this.btn_s1addNewMember.BorderRadius = 15;
+            this.btn_s1addNewMember.CheckedState.Parent = this.btn_s1addNewMember;
+            this.btn_s1addNewMember.CustomImages.Parent = this.btn_s1addNewMember;
+            this.btn_s1addNewMember.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_s1addNewMember.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_s1addNewMember.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_s1addNewMember.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_s1addNewMember.DisabledState.Parent = this.btn_s1addNewMember;
+            this.btn_s1addNewMember.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(214)))), ((int)(((byte)(144)))));
+            this.btn_s1addNewMember.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_s1addNewMember.ForeColor = System.Drawing.Color.White;
+            this.btn_s1addNewMember.HoverState.Parent = this.btn_s1addNewMember;
+            this.btn_s1addNewMember.Location = new System.Drawing.Point(27, 212);
+            this.btn_s1addNewMember.Name = "btn_s1addNewMember";
+            this.btn_s1addNewMember.ShadowDecoration.Parent = this.btn_s1addNewMember;
+            this.btn_s1addNewMember.Size = new System.Drawing.Size(145, 32);
+            this.btn_s1addNewMember.TabIndex = 2;
+            this.btn_s1addNewMember.Text = "Add-New";
+            this.btn_s1addNewMember.UseTransparentBackground = true;
+            this.btn_s1addNewMember.Click += new System.EventHandler(this.btn_s1addNewMember_Click);
             // 
             // guna2DragControl1
             // 
@@ -655,7 +660,7 @@ namespace SLNSSCEB_for_PC
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 529);
-            this.Controls.Add(this.guna2Panel6);
+            this.Controls.Add(this.pnal_addNewMember);
             this.Controls.Add(this.guna2Panel5);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel3);
@@ -678,8 +683,8 @@ namespace SLNSSCEB_for_PC
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox6)).EndInit();
-            this.guna2Panel6.ResumeLayout(false);
-            this.guna2Panel6.PerformLayout();
+            this.pnal_addNewMember.ResumeLayout(false);
+            this.pnal_addNewMember.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_addNewMember)).EndInit();
             this.ResumeLayout(false);
 
@@ -719,11 +724,11 @@ namespace SLNSSCEB_for_PC
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox6;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private Guna.UI2.WinForms.Guna2Panel pnal_addNewMember;
         private Guna.UI2.WinForms.Guna2PictureBox pbx_addNewMember;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2Button btn_s1addNewMember;
+        private System.Windows.Forms.Label lbl_pAddNewMember;
+        private System.Windows.Forms.Label lbl_hAddNewMember;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
