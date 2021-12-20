@@ -16,5 +16,10 @@ namespace SLNSSCEB_for_PC
         {
             InitializeComponent();
         }
+
+        private void pbx_addNewMember_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
