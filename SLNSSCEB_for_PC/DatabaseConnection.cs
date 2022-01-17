@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace SLNSSCEB_for_PC
 {
@@ -27,6 +28,28 @@ namespace SLNSSCEB_for_PC
                 //Sql Command not Executed
             }
             con.Close();
+        }
+
+        public bool checkLoginCredentials(string username, string password)
+        {
+            bool status = false;
+
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter("select count(*) from adminPanel where username = '" + username + "' and password = '" + password + "'", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            if (dt.Rows[0][0].ToString() == "1")
+            {
+                status = true;
+            }
+            else
+            {
+                status = false;
+            }
+            con.Close();
+
+            return status;
         }
     }
 }
