@@ -395,7 +395,7 @@ namespace SLNSSCEB_for_PC
             this.txt_MobileNumber.HoverState.Parent = this.txt_MobileNumber;
             this.txt_MobileNumber.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_MobileNumber.IconRight")));
             this.txt_MobileNumber.IconRightOffset = new System.Drawing.Point(15, 0);
-            this.txt_MobileNumber.Location = new System.Drawing.Point(50, 468);
+            this.txt_MobileNumber.Location = new System.Drawing.Point(50, 470);
             this.txt_MobileNumber.Name = "txt_MobileNumber";
             this.txt_MobileNumber.PasswordChar = '\0';
             this.txt_MobileNumber.PlaceholderText = "Mobile Number";

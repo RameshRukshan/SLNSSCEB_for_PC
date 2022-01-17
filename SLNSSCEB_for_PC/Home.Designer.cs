@@ -39,21 +39,21 @@ namespace SLNSSCEB_for_PC
             this.btn_Mhome = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
@@ -64,11 +64,12 @@ namespace SLNSSCEB_for_PC
             this.label16 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox6 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pnal_addNewMember = new Guna.UI2.WinForms.Guna2Panel();
-            this.pbx_addNewMember = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lbl_hAddNewMember = new System.Windows.Forms.Label();
-            this.lbl_pAddNewMember = new System.Windows.Forms.Label();
             this.btn_s1addNewMember = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_pAddNewMember = new System.Windows.Forms.Label();
+            this.lbl_hAddNewMember = new System.Windows.Forms.Label();
+            this.pbx_addNewMember = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.btn_logOut = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -145,6 +146,7 @@ namespace SLNSSCEB_for_PC
             this.btn_Mweb.TabIndex = 1;
             this.btn_Mweb.Text = "Web";
             this.btn_Mweb.UseTransparentBackground = true;
+            this.btn_Mweb.Click += new System.EventHandler(this.btn_Mweb_Click);
             // 
             // btn_Maddmember
             // 
@@ -254,6 +256,64 @@ namespace SLNSSCEB_for_PC
             this.guna2Panel2.Size = new System.Drawing.Size(180, 271);
             this.guna2Panel2.TabIndex = 1;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(12, 229);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(158, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "slnssceb@gmail.com";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(66, 206);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "E-Mail";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(18, 158);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 24);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "+94 11 243 3622";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(49, 132);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Telephone";
+            // 
+            // guna2Separator2
+            // 
+            this.guna2Separator2.Location = new System.Drawing.Point(5, 190);
+            this.guna2Separator2.Name = "guna2Separator2";
+            this.guna2Separator2.Size = new System.Drawing.Size(171, 8);
+            this.guna2Separator2.TabIndex = 3;
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Location = new System.Drawing.Point(5, 121);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(171, 8);
+            this.guna2Separator1.TabIndex = 3;
+            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
@@ -313,64 +373,6 @@ namespace SLNSSCEB_for_PC
             this.guna2CirclePictureBox2.TabStop = false;
             this.guna2CirclePictureBox2.UseTransparentBackground = true;
             // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Location = new System.Drawing.Point(5, 121);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(171, 8);
-            this.guna2Separator1.TabIndex = 3;
-            // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.Location = new System.Drawing.Point(5, 190);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(171, 8);
-            this.guna2Separator2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(49, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Telephone";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 158);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 24);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "+94 11 243 3622";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(66, 206);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "E-Mail";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(12, 229);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "slnssceb@gmail.com";
-            // 
             // guna2Panel4
             // 
             this.guna2Panel4.BackColor = System.Drawing.Color.White;
@@ -382,6 +384,27 @@ namespace SLNSSCEB_for_PC
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(469, 201);
             this.guna2Panel4.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(18, 68);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(441, 112);
+            this.label7.TabIndex = 2;
+            this.label7.Text = resources.GetString("label7.Text");
+            this.label7.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(63, 29);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(144, 21);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "About SLNSS CEB";
             // 
             // guna2CirclePictureBox4
             // 
@@ -397,27 +420,6 @@ namespace SLNSSCEB_for_PC
             this.guna2CirclePictureBox4.TabIndex = 0;
             this.guna2CirclePictureBox4.TabStop = false;
             this.guna2CirclePictureBox4.UseTransparentBackground = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(63, 29);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 21);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "About SLNSS CEB";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 68);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(441, 112);
-            this.label7.TabIndex = 2;
-            this.label7.Text = resources.GetString("label7.Text");
-            this.label7.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // guna2Panel5
             // 
@@ -583,45 +585,6 @@ namespace SLNSSCEB_for_PC
             this.pnal_addNewMember.TabIndex = 4;
             this.pnal_addNewMember.Paint += new System.Windows.Forms.PaintEventHandler(this.pnal_addNewMember_Paint);
             // 
-            // pbx_addNewMember
-            // 
-            this.pbx_addNewMember.BackColor = System.Drawing.Color.Transparent;
-            this.pbx_addNewMember.Image = ((System.Drawing.Image)(resources.GetObject("pbx_addNewMember.Image")));
-            this.pbx_addNewMember.ImageRotate = 0F;
-            this.pbx_addNewMember.Location = new System.Drawing.Point(46, 27);
-            this.pbx_addNewMember.Name = "pbx_addNewMember";
-            this.pbx_addNewMember.ShadowDecoration.Parent = this.pbx_addNewMember;
-            this.pbx_addNewMember.Size = new System.Drawing.Size(105, 98);
-            this.pbx_addNewMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_addNewMember.TabIndex = 0;
-            this.pbx_addNewMember.TabStop = false;
-            this.pbx_addNewMember.UseTransparentBackground = true;
-            this.pbx_addNewMember.Click += new System.EventHandler(this.pbx_addNewMember_Click);
-            // 
-            // lbl_hAddNewMember
-            // 
-            this.lbl_hAddNewMember.AutoSize = true;
-            this.lbl_hAddNewMember.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hAddNewMember.Location = new System.Drawing.Point(25, 134);
-            this.lbl_hAddNewMember.Name = "lbl_hAddNewMember";
-            this.lbl_hAddNewMember.Size = new System.Drawing.Size(151, 20);
-            this.lbl_hAddNewMember.TabIndex = 1;
-            this.lbl_hAddNewMember.Text = "Add New Member";
-            this.lbl_hAddNewMember.Click += new System.EventHandler(this.lbl_hAddNewMember_Click);
-            // 
-            // lbl_pAddNewMember
-            // 
-            this.lbl_pAddNewMember.AutoSize = true;
-            this.lbl_pAddNewMember.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pAddNewMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
-            this.lbl_pAddNewMember.Location = new System.Drawing.Point(21, 163);
-            this.lbl_pAddNewMember.Name = "lbl_pAddNewMember";
-            this.lbl_pAddNewMember.Size = new System.Drawing.Size(160, 32);
-            this.lbl_pAddNewMember.TabIndex = 1;
-            this.lbl_pAddNewMember.Text = "Add new member to click \r\nAdd New button ";
-            this.lbl_pAddNewMember.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lbl_pAddNewMember.Click += new System.EventHandler(this.lbl_pAddNewMember_Click);
-            // 
             // btn_s1addNewMember
             // 
             this.btn_s1addNewMember.Animated = true;
@@ -648,6 +611,45 @@ namespace SLNSSCEB_for_PC
             this.btn_s1addNewMember.UseTransparentBackground = true;
             this.btn_s1addNewMember.Click += new System.EventHandler(this.btn_s1addNewMember_Click);
             // 
+            // lbl_pAddNewMember
+            // 
+            this.lbl_pAddNewMember.AutoSize = true;
+            this.lbl_pAddNewMember.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pAddNewMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.lbl_pAddNewMember.Location = new System.Drawing.Point(21, 163);
+            this.lbl_pAddNewMember.Name = "lbl_pAddNewMember";
+            this.lbl_pAddNewMember.Size = new System.Drawing.Size(160, 32);
+            this.lbl_pAddNewMember.TabIndex = 1;
+            this.lbl_pAddNewMember.Text = "Add new member to click \r\nAdd New button ";
+            this.lbl_pAddNewMember.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lbl_pAddNewMember.Click += new System.EventHandler(this.lbl_pAddNewMember_Click);
+            // 
+            // lbl_hAddNewMember
+            // 
+            this.lbl_hAddNewMember.AutoSize = true;
+            this.lbl_hAddNewMember.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hAddNewMember.Location = new System.Drawing.Point(25, 134);
+            this.lbl_hAddNewMember.Name = "lbl_hAddNewMember";
+            this.lbl_hAddNewMember.Size = new System.Drawing.Size(151, 20);
+            this.lbl_hAddNewMember.TabIndex = 1;
+            this.lbl_hAddNewMember.Text = "Add New Member";
+            this.lbl_hAddNewMember.Click += new System.EventHandler(this.lbl_hAddNewMember_Click);
+            // 
+            // pbx_addNewMember
+            // 
+            this.pbx_addNewMember.BackColor = System.Drawing.Color.Transparent;
+            this.pbx_addNewMember.Image = ((System.Drawing.Image)(resources.GetObject("pbx_addNewMember.Image")));
+            this.pbx_addNewMember.ImageRotate = 0F;
+            this.pbx_addNewMember.Location = new System.Drawing.Point(46, 27);
+            this.pbx_addNewMember.Name = "pbx_addNewMember";
+            this.pbx_addNewMember.ShadowDecoration.Parent = this.pbx_addNewMember;
+            this.pbx_addNewMember.Size = new System.Drawing.Size(105, 98);
+            this.pbx_addNewMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_addNewMember.TabIndex = 0;
+            this.pbx_addNewMember.TabStop = false;
+            this.pbx_addNewMember.UseTransparentBackground = true;
+            this.pbx_addNewMember.Click += new System.EventHandler(this.pbx_addNewMember_Click);
+            // 
             // guna2DragControl1
             // 
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
@@ -655,11 +657,41 @@ namespace SLNSSCEB_for_PC
             this.guna2DragControl1.TargetControl = this.guna2Panel1;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
+            // btn_logOut
+            // 
+            this.btn_logOut.Animated = true;
+            this.btn_logOut.AutoRoundedCorners = true;
+            this.btn_logOut.BackColor = System.Drawing.Color.Transparent;
+            this.btn_logOut.BorderRadius = 12;
+            this.btn_logOut.CheckedState.Parent = this.btn_logOut;
+            this.btn_logOut.CustomImages.Parent = this.btn_logOut;
+            this.btn_logOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_logOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_logOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_logOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_logOut.DisabledState.Parent = this.btn_logOut;
+            this.btn_logOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(0)))), ((int)(((byte)(63)))));
+            this.btn_logOut.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_logOut.ForeColor = System.Drawing.Color.White;
+            this.btn_logOut.HoverState.Parent = this.btn_logOut;
+            this.btn_logOut.Image = ((System.Drawing.Image)(resources.GetObject("btn_logOut.Image")));
+            this.btn_logOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_logOut.ImageOffset = new System.Drawing.Point(15, 0);
+            this.btn_logOut.Location = new System.Drawing.Point(806, 403);
+            this.btn_logOut.Name = "btn_logOut";
+            this.btn_logOut.ShadowDecoration.Parent = this.btn_logOut;
+            this.btn_logOut.Size = new System.Drawing.Size(148, 27);
+            this.btn_logOut.TabIndex = 5;
+            this.btn_logOut.Text = "Log Out";
+            this.btn_logOut.UseTransparentBackground = true;
+            this.btn_logOut.Click += new System.EventHandler(this.btn_logOut_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 529);
+            this.Controls.Add(this.btn_logOut);
             this.Controls.Add(this.pnal_addNewMember);
             this.Controls.Add(this.guna2Panel5);
             this.Controls.Add(this.guna2Panel4);
@@ -730,5 +762,6 @@ namespace SLNSSCEB_for_PC
         private System.Windows.Forms.Label lbl_pAddNewMember;
         private System.Windows.Forms.Label lbl_hAddNewMember;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2Button btn_logOut;
     }
 }

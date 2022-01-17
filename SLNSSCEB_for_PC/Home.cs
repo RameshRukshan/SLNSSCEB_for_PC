@@ -32,7 +32,7 @@ namespace SLNSSCEB_for_PC
 
         private void pnal_addNewMember_Paint(object sender, PaintEventArgs e)
         {
-            adnm.ShowDialog();
+            //adnm.ShowDialog();
         }
 
         private void lbl_hAddNewMember_Click(object sender, EventArgs e)
@@ -48,6 +48,18 @@ namespace SLNSSCEB_for_PC
         private void btn_s1addNewMember_Click(object sender, EventArgs e)
         {
             adnm.ShowDialog();
+        }
+
+        private void btn_logOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Sign_in sin = new Sign_in();
+            sin.Show();
+        }
+
+        private void btn_Mweb_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
