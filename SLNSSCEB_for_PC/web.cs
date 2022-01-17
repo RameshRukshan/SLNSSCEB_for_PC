@@ -45,5 +45,12 @@ namespace SLNSSCEB_for_PC
             profile p = new profile();
             p.Show();
         }
+
+        private void btn_Maddmember_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            AddNewMember n = new AddNewMember();
+            n.Show();
+        }
     }
 }

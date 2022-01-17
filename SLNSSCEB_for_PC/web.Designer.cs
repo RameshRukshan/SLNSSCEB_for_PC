@@ -133,6 +133,7 @@ namespace SLNSSCEB_for_PC
             this.btn_Maddmember.TabIndex = 1;
             this.btn_Maddmember.Text = "Add-Member";
             this.btn_Maddmember.UseTransparentBackground = true;
+            this.btn_Maddmember.Click += new System.EventHandler(this.btn_Maddmember_Click);
             // 
             // btn_Mprofile
             // 
