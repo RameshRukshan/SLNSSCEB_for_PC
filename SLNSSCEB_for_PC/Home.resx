@@ -1787,16 +1787,16 @@ the present and we have a responsibility to do so in the future.</value>
   </metadata>
   <data name="btn_logOut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAHvSURBVEhL7ZZLK0RhGIDHwsJCjYWYMaOhRH6LcitKynrKvfwLW6UoCxYoJRqxUhbK2Fm4FCsr
-        KfcFwud5z7ynZsycOZeZJot56tm8ty+fM+e8oSr/DmNMHGcxhXf4gPd4jvuYxGYtLx2GxXAVf9CNT1zE
-        Fm0PBgOG8RGFN1zBXmzFBrUdB3EN31F4xT4d4w8ax9H+K9cxqilHqGnDLWmAb5zSlDdoGEA5VJonNOwZ
-        embwS/t7NFwcCqP4jMKkhn1D71xmhHnCiIadoWjZKufKNBQI+mtw15pkzJKGnaFoHq8xpqE8yB1hGhs1
-        VBDyHShPulx7XMPBYYgcKpyh2+GbViUPq4aCw5Aw2odfoeMTT27EqjJmT0OlwSBPhxPvtCqMudRQPiTl
-        fxeUtI7JgXh9Jm1eNJQPyVIOPtUxORB3P9gPDJLfu1yxIFce1lQOxLusCmMuNBQchng6VCBnP1wpDQWH
-        ISeZWb5+TkkNFYYCeYHcouOnjdwhHqPXF4hY/LVJQTlfmTvWJGMWNOwMRREs90eiScPFobAf7c+i71cd
-        PbIi+fss2siBaC8CG5jQlCPUyDaSvQhMa8ofNA6hvfrIA7KNo5jAWqzDbhxD2VI+UAi++tgwoPLLXjYM
-        +7veylXKcneDByjrrfumUaWyhEK/UmmVKJC1BZEAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAe9JREFUSEvt
+        lksrRGEYgMfCwkKNhZgxo6FEfotyK0rKesq9/AtbpSgLFiglGrFSFsrYWbgUKysp9wXC53nPvKdmzJw5
+        l5kmi3nq2by3L58z57yhKv8OY0wcZzGFd/iA93iO+5jEZi0vHYbFcBV/0I1PXMQWbQ8GA4bxEYU3XMFe
+        bMUGtR0HcQ3fUXjFPh3jDxrH0f4r1zGqKUeoacMtaYBvnNKUN2gYQDlUmic07Bl6ZvBL+3s0XBwKo/iM
+        wqSGfUPvXGaEecKIhp2haNkq58o0FAj6a3DXmmTMkoadoWgerzGmoTzIHWEaGzVUEPIdKE+6XHtcw8Fh
+        iBwqnKHb4ZtWJQ+rhoLDkDDah1+h4xNPbsSqMmZPQ6XBIE+HE++0Koy51FA+JOV/F5S0jsmBeH0mbV40
+        lA/JUg4+1TE5EHc/2A8Mkt+7XLEgVx7WVA7Eu6wKYy40FByGeDpUIGc/XCkNBYchJ5lZvn5OSQ0VhgJ5
+        gdyi46eN3CEeo9cXiFj8tUlBOV+ZO9YkYxY07AxFESz3R6JJw8WhsB/tz6LvVx09siL5+yzayIFoLwIb
+        mNCUI9TINpK9CExryh80DqG9+sgDso2jmMBarMNuHEPZUj5QCL762DCg8steNgz7u97KVcpyd4MHKOut
+        +6ZRpbKEQr9SaZUokLUFkQAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

@@ -59,7 +59,16 @@ namespace SLNSSCEB_for_PC
 
         private void btn_Mweb_Click(object sender, EventArgs e)
         {
-           
+            this.Close();
+            web w = new web();
+            w.Show();
+        }
+
+        private void btn_Mprofile_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            profile p = new profile();
+            p.Show();
         }
     }
 }
