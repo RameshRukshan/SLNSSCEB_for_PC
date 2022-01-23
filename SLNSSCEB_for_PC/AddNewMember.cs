@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace SLNSSCEB_for_PC
 {
@@ -148,6 +149,10 @@ namespace SLNSSCEB_for_PC
             {
                 txt_NIC.BorderColor = System.Drawing.Color.Red;
             }
+            else if (!Regex.IsMatch(txt_NIC.Text, @"^([0-9]{9}[x|X|v|V]|[0-9]{12})$"))
+            {
+                txt_NIC.BorderColor = System.Drawing.Color.Red;
+            }
             else
             {
                 countVal++;
@@ -198,6 +203,8 @@ namespace SLNSSCEB_for_PC
 
         private void AddNewMember_Load(object sender, System.EventArgs e)
         {
+            // TODO: This line of code loads data into the 'sLNSSCEBDataSet.workStation' table. You can move, or remove it, as needed.
+            this.workStationTableAdapter.Fill(this.sLNSSCEBDataSet.workStation);
             lbl_error.Visible = false;
 
             txt_FName.BorderColor = System.Drawing.Color.DarkGray;

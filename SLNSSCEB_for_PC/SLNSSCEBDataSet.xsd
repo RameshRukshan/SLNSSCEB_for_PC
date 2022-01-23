@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SLNSSCEBDataSet" targetNamespace="http://tempuri.org/SLNSSCEBDataSet.xsd" xmlns:mstns="http://tempuri.org/SLNSSCEBDataSet.xsd" xmlns="http://tempuri.org/SLNSSCEBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SLNSSCEBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SLNSSCEBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SLNSSCEB_for_PC.Properties.Settings.GlobalReference.Default.SLNSSCEBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="workStationTableAdapter" GeneratorDataComponentClassName="workStationTableAdapter" Name="workStation" UserDataComponentName="workStationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SLNSSCEBConnectionString (Settings)" DbObjectName="SLNSSCEB.dbo.workStation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT stationName FROM dbo.workStation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="stationName" DataSetColumn="stationName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SLNSSCEBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SLNSSCEBDataSet" msprop:Generator_UserDSName="SLNSSCEBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="workStation" msprop:Generator_TableClassName="workStationDataTable" msprop:Generator_TableVarName="tableworkStation" msprop:Generator_TablePropName="workStation" msprop:Generator_RowDeletingName="workStationRowDeleting" msprop:Generator_RowChangingName="workStationRowChanging" msprop:Generator_RowEvHandlerName="workStationRowChangeEventHandler" msprop:Generator_RowDeletedName="workStationRowDeleted" msprop:Generator_UserTableName="workStation" msprop:Generator_RowChangedName="workStationRowChanged" msprop:Generator_RowEvArgName="workStationRowChangeEvent" msprop:Generator_RowClassName="workStationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stationName" msprop:Generator_ColumnVarNameInTable="columnstationName" msprop:Generator_ColumnPropNameInRow="stationName" msprop:Generator_ColumnPropNameInTable="stationNameColumn" msprop:Generator_UserColumnName="stationName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

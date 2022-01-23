@@ -29,6 +29,7 @@ namespace SLNSSCEB_for_PC
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewMember));
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.rad_female = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -52,8 +53,13 @@ namespace SLNSSCEB_for_PC
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.lbl_error = new System.Windows.Forms.Label();
+            this.sLNSSCEBDataSet = new SLNSSCEB_for_PC.SLNSSCEBDataSet();
+            this.workStationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.workStationTableAdapter = new SLNSSCEB_for_PC.SLNSSCEBDataSetTableAdapters.workStationTableAdapter();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sLNSSCEBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.workStationBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
@@ -174,6 +180,13 @@ namespace SLNSSCEB_for_PC
             this.cmbx_grade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbx_grade.HoverState.Parent = this.cmbx_grade;
             this.cmbx_grade.ItemHeight = 30;
+            this.cmbx_grade.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"});
             this.cmbx_grade.ItemsAppearance.Parent = this.cmbx_grade;
             this.cmbx_grade.Location = new System.Drawing.Point(310, 387);
             this.cmbx_grade.Name = "cmbx_grade";
@@ -188,7 +201,6 @@ namespace SLNSSCEB_for_PC
             this.cmbx_WorkStation.AutoRoundedCorners = true;
             this.cmbx_WorkStation.BackColor = System.Drawing.Color.Transparent;
             this.cmbx_WorkStation.BorderRadius = 17;
-            this.cmbx_WorkStation.DisplayMember = "Work Station";
             this.cmbx_WorkStation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbx_WorkStation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_WorkStation.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -198,6 +210,11 @@ namespace SLNSSCEB_for_PC
             this.cmbx_WorkStation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbx_WorkStation.HoverState.Parent = this.cmbx_WorkStation;
             this.cmbx_WorkStation.ItemHeight = 30;
+            this.cmbx_WorkStation.Items.AddRange(new object[] {
+            "Matara",
+            "Galle",
+            "Colombo",
+            "Jafna"});
             this.cmbx_WorkStation.ItemsAppearance.Parent = this.cmbx_WorkStation;
             this.cmbx_WorkStation.Location = new System.Drawing.Point(50, 387);
             this.cmbx_WorkStation.Name = "cmbx_WorkStation";
@@ -554,6 +571,20 @@ namespace SLNSSCEB_for_PC
             this.lbl_error.TabIndex = 7;
             this.lbl_error.Text = "Some Feild/s are wrong or empty, Please check your details again!";
             // 
+            // sLNSSCEBDataSet
+            // 
+            this.sLNSSCEBDataSet.DataSetName = "SLNSSCEBDataSet";
+            this.sLNSSCEBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // workStationBindingSource
+            // 
+            this.workStationBindingSource.DataMember = "workStation";
+            this.workStationBindingSource.DataSource = this.sLNSSCEBDataSet;
+            // 
+            // workStationTableAdapter
+            // 
+            this.workStationTableAdapter.ClearBeforeFill = true;
+            // 
             // AddNewMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -570,6 +601,8 @@ namespace SLNSSCEB_for_PC
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sLNSSCEBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.workStationBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -598,5 +631,8 @@ namespace SLNSSCEB_for_PC
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Label lbl_error;
+        private SLNSSCEBDataSet sLNSSCEBDataSet;
+        private System.Windows.Forms.BindingSource workStationBindingSource;
+        private SLNSSCEBDataSetTableAdapters.workStationTableAdapter workStationTableAdapter;
     }
 }
