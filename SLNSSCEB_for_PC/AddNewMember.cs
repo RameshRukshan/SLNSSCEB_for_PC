@@ -139,6 +139,10 @@ namespace SLNSSCEB_for_PC
             {
                 txt_MobileNumber.BorderColor = System.Drawing.Color.Red;
             }
+            else if (!Regex.IsMatch(txt_MobileNumber.Text, @"^(?:7|0|(?:\+94))[0-9]{9,10}$"))
+            {
+                txt_MobileNumber.BorderColor = System.Drawing.Color.Red;
+            }
             else
             {
                 countVal++;
