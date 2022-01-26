@@ -48,7 +48,7 @@ namespace SLNSSCEB_for_PC
 
         private void btn_addMember_Click(object sender, System.EventArgs e)
         {
-            int countVal = 0;
+            int countVal = 0,zipCode;
             bool gend;
             string workStation = "", grade = "", gender;
 
@@ -68,7 +68,10 @@ namespace SLNSSCEB_for_PC
             if (string.IsNullOrEmpty(txt_PFNumber.Text))
             {
                 txt_PFNumber.BorderColor = System.Drawing.Color.Red;
-            }
+            }else if(txt_PFNumber.Text.Length > 10)
+            {
+                txt_PFNumber.BorderColor = System.Drawing.Color.Red;
+            } 
             else
             {
                 countVal = countVal + 1;
@@ -76,6 +79,9 @@ namespace SLNSSCEB_for_PC
 
 
             if (string.IsNullOrEmpty(txt_FName.Text))
+            {
+                txt_FName.BorderColor = System.Drawing.Color.Red;
+            }else if (txt_FName.Text.Length > 8)
             {
                 txt_FName.BorderColor = System.Drawing.Color.Red;
             }
@@ -88,6 +94,9 @@ namespace SLNSSCEB_for_PC
             if (string.IsNullOrEmpty(txt_LName.Text))
             {
                 txt_LName.BorderColor = System.Drawing.Color.Red;
+            }else if (txt_LName.Text.Length > 10)
+            {
+                txt_LName.BorderColor = System.Drawing.Color.Red;
             }
             else
             {
@@ -96,6 +105,9 @@ namespace SLNSSCEB_for_PC
 
 
             if (string.IsNullOrEmpty(txt_AddressOne.Text))
+            {
+                txt_AddressOne.BorderColor = System.Drawing.Color.Red;
+            }else if (txt_AddressOne.Text.Length > 20)
             {
                 txt_AddressOne.BorderColor = System.Drawing.Color.Red;
             }
@@ -108,6 +120,9 @@ namespace SLNSSCEB_for_PC
             if (string.IsNullOrEmpty(txt_AddressTwo.Text))
             {
                 txt_AddressTwo.BorderColor = System.Drawing.Color.Red;
+            }else if (txt_AddressTwo.Text.Length > 20)
+            {
+                txt_AddressTwo.BorderColor = System.Drawing.Color.Red;
             }
             else
             {
@@ -116,6 +131,9 @@ namespace SLNSSCEB_for_PC
 
 
             if (string.IsNullOrEmpty(txt_City.Text))
+            {
+                txt_City.BorderColor = System.Drawing.Color.Red;
+            }else if (txt_City.Text.Length > 20)
             {
                 txt_City.BorderColor = System.Drawing.Color.Red;
             }
@@ -128,12 +146,16 @@ namespace SLNSSCEB_for_PC
             if (string.IsNullOrEmpty(txt_ZipCode.Text))
             {
                 txt_ZipCode.BorderColor = System.Drawing.Color.Red;
+            }else if (txt_ZipCode.Text.Length > 4)
+            {
+                txt_ZipCode.BorderColor = System.Drawing.Color.Red;
             }
             else
             {
                 countVal++;
             }
 
+            
 
             if (string.IsNullOrEmpty(txt_MobileNumber.Text))
             {
