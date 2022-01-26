@@ -23,7 +23,7 @@ namespace SLNSSCEB_for_PC
             try
             {
                 StringBuilder mapLocation = new StringBuilder();
-                mapLocation.Append("https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/");
+                mapLocation.Append("http://slnssceb.lk/");
                 webBrowser1.Navigate(mapLocation.ToString());
             }
             catch (Exception)
